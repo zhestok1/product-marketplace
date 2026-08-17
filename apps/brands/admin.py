@@ -1,9 +1,6 @@
-from django.contrib.auth import get_user
 from django.contrib import admin
 
 from .models import BrandProfile, OOODetails, IPSEDetails
-
-user = get_user()
 
 class OOODetailsInline(admin.TabularInline):
     model = OOODetails
