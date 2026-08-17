@@ -38,6 +38,8 @@ class BrandProfileAdmin(admin.ModelAdmin):
                 inline_instances.append(OOODetailsInline(self.model, self.admin_site))
             else:
                 inline_instances.append(IPSEDetails(self.model, self.admin_site))
+                
+        return inline_instances
             
 
 
